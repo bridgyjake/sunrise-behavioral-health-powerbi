@@ -7,21 +7,46 @@ This project is the direct visual continuation of Portfolio Project 1 — Behavi
 The goal was to translate complex analytical findings into a format a clinic director could act on immediately — without needing to read a single SQL query.
 
 
+
 The Business Problems This Dashboard Answers
 
 These are the same five questions established in Project 1, now answered visually:
 
 
+
 What drove the revenue decline between 2022 and 2023?
+
+
 → Page 1 (Clinic Overview) and Page 4 (Financial Trends) — revenue by year and payer mix shift by year
+
+
+
 Which providers are performing efficiently, and which represent operational risk?
+
+
 → Page 1 (Clinic Overview) — no-show rate by provider benchmarked against the clinic average, with drill-through to Page 5 (Provider Detail) for individual provider deep-dives
+
+
+
 Are patients being retained year-over-year, or is the clinic losing its existing base?
+
+
 → Page 2 (Patient Analysis) — new vs. returning patients by year, showing the retention trend from 2021 to 2024
+
+
+
 What is driving patient discharges — clinical completion or external factors like insurance denial?
+
+
 → Page 2 (Patient Analysis) — discharge reason breakdown showing insurance denial as the second leading discharge cause
+
+
+
 Which patient populations represent the highest utilization and financial risk?
+
+
 → Page 3 (Patient Risk & Utilization) — high utilizer identification, risk classification distribution, and Medi-Cal concentration among high utilizers
+
 
 
 
