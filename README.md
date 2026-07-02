@@ -199,8 +199,9 @@ This dashboard was built in Power BI Desktop connected to a local MySQL database
 As a result, this project is shared in two formats:
 
 
-Sunrise_Behavioral_Health_Dashboard.pdf — All 5 pages exported as a static PDF. Full visual content visible, suitable for review without Power BI installed.
-Sunrise_Behavioral_Health_Dashboard.pbix — The full Power BI project file. Download and open in Power BI Desktop (free) to interact with the live dashboard, explore DAX measures, and review the data model. All data connections will need to be re-pointed to a local MySQL instance loaded with the v4 dataset from Project 1.
+[Sunrise_Behavioral_Health_Dashboard.pdf](https://github.com/bridgyjake/sunrise-behavioral-health-powerbi/blob/b8e093ba62e4ddea95c042dd175b0f0eb59464da/Sunrise_Behavioral_Health_Dashboard.pdf) — All 5 pages exported as a static PDF. Full visual content visible, suitable for review without Power BI installed.
+
+[Sunrise_Behavioral_Health_Dashboard.pbix](https://github.com/bridgyjake/sunrise-behavioral-health-powerbi/blob/b8e093ba62e4ddea95c042dd175b0f0eb59464da/Sunrise_Behavioral_Health_Dashboard.pbix) — The full Power BI project file. Download and open in Power BI Desktop (free) to interact with the live dashboard, explore DAX measures, and review the data model. All data connections will need to be re-pointed to a local MySQL instance loaded with the v4 dataset from Project 1.
 
 
 Note: This constraint reflects a real-world scenario. In a production healthcare environment, reports would be published to a secured Power BI workspace with Row-Level Security (RLS) applied to restrict data access by role — a topic covered in the PL-300 certification curriculum.
@@ -213,7 +214,11 @@ This project uses entirely synthetic data generated to mirror realistic behavior
 
 Project Connections
 
-ProjectDescriptionLinkProject 1End-to-end SQL analytics — data validation, staging architecture, 13 analytical queriesGitHubProject 2This project — Power BI executive dashboardCurrent repoProject 3Python + dbt/Databricks data pipeline (coming soon)—
+[ProjectDescriptionLinkProject 1End-to-end SQL analytics](https://github.com/bridgyjake/sunrise-behavioral-health-analytics) — data validation, staging architecture, 13 analytical queries 
+
+GitHub Project 2 This project — Power BI executive dashboard Current repo 
+
+Project 3 Python + dbt/Databricks data pipeline (coming soon)
 
 
 About
