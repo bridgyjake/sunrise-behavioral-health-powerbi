@@ -31,31 +31,31 @@ Page 1 — Clinic Overview
 
 Revenue by year, no-show rate by provider (2023) benchmarked against clinic average, KPI cards showing actual vs industry benchmark targets.
 
-Show Image
+![Clinic Overview](page1_clinic_overview.png)
 
 Page 2 — Patient Analysis
 
 Insurance type distribution, no-show rate by referral source, discharge reason breakdown, new vs returning patients by year.
 
-Show Image
+![Clinic Overview](page2_patient_analysis.png)
 
 Page 3 — Patient Risk & Utilization
 
 High utilizer patient table, risk classification distribution, Medi-Cal concentration among high utilizers.
 
-Show Image
+![Clinic Overview](page3_patient_risk.png)
 
 Page 4 — Financial Trends
 
 Monthly revenue with running total (2023), revenue by insurance type by year showing payer mix shift, revenue per encounter vs target.
 
-Show Image
+![Clinic Overview](page4_financial_trends.png)
 
 Page 5 — Provider Detail (Drill Through)
 
 Individual provider performance page showing total revenue, no-show rate, monthly encounter volume, and full patient list with insurance types. Filter to any provider using the provider selector panel to view their complete performance profile.
 
-Show Image
+![Clinic Overview](page5_provider_detail.png)
 
 
 Connection to Project 1
@@ -220,4 +220,8 @@ About
 
 Built by Jakob Bridgman — behavioral health worker with 3 years of direct clinical experience transitioning into healthcare data analytics and data engineering. This project reflects both technical Power BI and DAX proficiency and domain-level understanding of behavioral health operations, payer dynamics, and clinical outcome metrics.
 
-Targeting Healthcare Data Analyst, Clinical Data Analyst, and Epic Clarity Analyst roles. Open to connecting on LinkedIn.
+Targeting Healthcare Data Analyst, Clinical Data Analyst, and Epic Clarity Analyst roles. 
+
+Feel free to connect or reach out with feedback.
+
+LinkedIn: https://www.linkedin.com/in/jakob-bridgman-514615397/
