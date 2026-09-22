@@ -199,12 +199,12 @@ High utilizers (>20 encounters) account for a disproportionate share of clinical
 
 ## File Availability and Publishing Constraints
 
-This dashboard was built in Power BI Desktop connected to a local MySQL database. Publishing to Power BI Service for a public interactive link requires an organizational Microsoft 365 account — a constraint common in healthcare environments where IT departments restrict self-service cloud publishing for HIPAA compliance reasons.
+This dashboard was built in Power BI Desktop connected to a local MySQL database. Publishing to Power BI Service for a shareable public link requires a Power BI Pro or Premium Per User license tied to an organizational Microsoft 365 account. As a result, this project is shared as a downloadable PBIX and static PDF export.
 
 This project is shared in two formats:
 
-- **(Sunrise_Behavioral_Health_Dashboard.pbix)** — The full Power BI project file. Download and open in Power BI Desktop (free) to interact with the live dashboard, explore DAX measures, and review the data model.
-- **(sunrise_behavioral_health_report.pdf)** — All 3 pages exported as a static PDF.
+- **[Sunrise_Behavioral_Health_Dashboard.pbix](Sunrise_Behavioral_Health_Dashboard.pbix)** — The full Power BI project file. Download and open in Power BI Desktop (free) to interact with the live dashboard, explore DAX measures, and review the data model.
+- **[sunrise_behavioral_health_report.pdf](sunrise_behavioral_health_report.pdf)** — All 3 pages exported as a static PDF.
 
 ---
 
