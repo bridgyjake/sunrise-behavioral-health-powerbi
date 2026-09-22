@@ -203,8 +203,8 @@ This dashboard was built in Power BI Desktop connected to a local MySQL database
 
 This project is shared in two formats:
 
-- **`Sunrise_Behavioral_Health_Dashboard.pbix`** — The full Power BI project file. Download and open in Power BI Desktop (free) to interact with the live dashboard, explore DAX measures, and review the data model.
-- **`sunrise_behavioral_health_report.pdf`** — All 3 pages exported as a static PDF.
+- **(Sunrise_Behavioral_Health_Dashboard.pbix)** — The full Power BI project file. Download and open in Power BI Desktop (free) to interact with the live dashboard, explore DAX measures, and review the data model.
+- **(sunrise_behavioral_health_report.pdf)** — All 3 pages exported as a static PDF.
 
 ---
 
@@ -218,7 +218,7 @@ This project uses entirely synthetic data generated to mirror realistic behavior
 
 | Project | Description | Link |
 |---------|-------------|------|
-| Project 1 | End-to-end SQL analytics — data validation, staging architecture, 13 analytical queries | [GitHub]([https://github.com/bridgyjake/sunrise-behavioral-health-analytics](https://github.com/bridgyjake/sunrise-behavioral-health-analytics)) |
+| Project 1 | End-to-end SQL analytics — data validation, staging architecture, 13 analytical queries | (https://github.com/bridgyjake/sunrise-behavioral-health-analytics) |
 | Project 2 | This project — Power BI executive dashboard | Current repo |
 | Project 3 | Python + dbt/Databricks data pipeline (coming soon) | — |
 
