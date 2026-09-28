@@ -1,55 +1,45 @@
-# Sunrise Behavioral Health Clinic — Power BI Executive Dashboard
+Sunrise Behavioral Health Clinic — Power BI Executive Dashboard
+Executive Summary
+Revenue fell 26% in one year, from $79,637 in 2022 to $58,818 in 2023, with the steepest drop in the second half of 2023.
+No-shows cost the clinic an estimated $16,250 in 2023 — 168 missed appointments at an average of $96.74 per attended visit. One provider, Michael Okafor, accounts for about $8,010 of that, nearly half. Bringing his no-show rate down to the 20% benchmark would recover roughly $4,700 per year.
+10 patients (23.3% of all discharges) left because insurance stopped covering care, not because treatment was complete. Denials hit every payer type, Private included.
+Two providers generate 52.6% of clinic revenue ($30,946 of $58,818 in 2023). That is concentrated risk if either one leaves.
 
-## Overview
+All dollar figures come from the synthetic dataset described below. It is a scaled-down sample, so rates and per-encounter figures carry over to a real clinic better than the absolute totals do.
 
-This project is the direct visual continuation of [Portfolio Project 1 — Behavioral Health SQL Analytics](https://github.com/bridgyjake/sunrise-behavioral-health-analytics). Every finding surfaced through SQL in Project 1 is now visualized as an interactive, multi-page executive dashboard built in Power BI Desktop, connected directly to a live MySQL database.
+Overview
+
+This project is the direct visual continuation of Portfolio Project 1 — Behavioral Health SQL Analytics. Every finding surfaced through SQL in Project 1 is now visualized as an interactive, multi-page executive dashboard built in Power BI Desktop, connected directly to a live MySQL database.
 
 The goal was to translate complex analytical findings into a format a clinic director could act on immediately — without needing to read a single SQL query.
 
 This dashboard was redesigned in v2 to consolidate five pages into three, apply consistent professional branding, and improve visual clarity across all pages.
 
----
-
-## The Business Problems This Dashboard Answers
+The Business Problems This Dashboard Answers
 
 These are the same five questions established in Project 1, now answered visually:
 
-1. **What drove the revenue decline between 2022 and 2023?** → Page 1 (Clinic Overview) — revenue by year with conditional coloring highlighting the 2022 peak and 2023 decline, payer mix shift by year, and running total showing the second-half revenue collapse
+What drove the revenue decline between 2022 and 2023? → Page 1 (Clinic Overview) — revenue by year with conditional coloring highlighting the 2022 peak and 2023 decline, payer mix shift by year, and running total showing the second-half revenue collapse
+Which providers are performing efficiently, and which represent operational risk? → Page 1 (Clinic Overview) — no-show rate by provider benchmarked against the clinic average, with drill-through to Page 3 (Provider Detail) for individual provider deep-dives
+Are patients being retained year-over-year, or is the clinic losing its existing base? → Page 2 (Patient & Risk Analysis) — new vs. returning patients by year, showing the retention trend from 2021 to 2024
+What is driving patient discharges — clinical completion or external factors like insurance denial? → Page 2 (Patient & Risk Analysis) — discharge reason breakdown showing insurance denial as the second leading discharge cause
+Which patient populations represent the highest utilization and financial risk? → Page 2 (Patient & Risk Analysis) — high utilizer identification, risk classification distribution, and Medi-Cal concentration among high utilizers
+Dashboard Structure
+Page	Title	Key Visuals
+1	Clinic Overview	Revenue by year, running total & monthly revenue (2023), revenue by insurance type by year, revenue per encounter vs target, no-show rate by provider vs benchmark
+2	Patient & Risk Analysis	New vs returning patients by year, patients by risk classification, patients per discharge reason, patients per insurance type, no-show rate by referral source, Medi-Cal high utilizer %, high utilizer patient table
+3	Provider Detail	Drill-through page — no-show rate, total revenue, total monthly encounters, full patient list with insurance types for any individual provider
+v2 Redesign — What Changed and Why
 
-2. **Which providers are performing efficiently, and which represent operational risk?** → Page 1 (Clinic Overview) — no-show rate by provider benchmarked against the clinic average, with drill-through to Page 3 (Provider Detail) for individual provider deep-dives
+Consolidated from 5 pages to 3 The original dashboard had separate pages for Clinic Overview, Patient Analysis, Patient Risk & Utilization, Financial Trends, and Provider Detail. Financial Trends visuals were merged into Clinic Overview so all revenue and operational data lives in one executive view. Patient Analysis and Patient Risk & Utilization were merged into one Patient & Risk Analysis page so all patient-facing analysis is in one place. This mirrors how clinic leadership actually consumes data — they want one operational page and one patient page, not five separate tabs.
 
-3. **Are patients being retained year-over-year, or is the clinic losing its existing base?** → Page 2 (Patient & Risk Analysis) — new vs. returning patients by year, showing the retention trend from 2021 to 2024
+Professional branding applied A custom Sunrise Behavioral Health logo was added to every page header. The navy (
+#0f3460) and cyan (
+#4CC9F0) color palette was applied consistently across all pages, replacing the default Power BI color scheme.
 
-4. **What is driving patient discharges — clinical completion or external factors like insurance denial?** → Page 2 (Patient & Risk Analysis) — discharge reason breakdown showing insurance denial as the second leading discharge cause
+Conditional coloring on revenue chart The Total Revenue by Year chart now uses conditional coloring — 2022 (peak year) is highlighted in red so the revenue decline story is immediately visible without reading the numbers.
 
-5. **Which patient populations represent the highest utilization and financial risk?** → Page 2 (Patient & Risk Analysis) — high utilizer identification, risk classification distribution, and Medi-Cal concentration among high utilizers
-
----
-
-## Dashboard Structure
-
-| Page | Title | Key Visuals |
-|------|-------|-------------|
-| 1 | Clinic Overview | Revenue by year, running total & monthly revenue (2023), revenue by insurance type by year, revenue per encounter vs target, no-show rate by provider vs benchmark |
-| 2 | Patient & Risk Analysis | New vs returning patients by year, patients by risk classification, patients per discharge reason, patients per insurance type, no-show rate by referral source, Medi-Cal high utilizer %, high utilizer patient table |
-| 3 | Provider Detail | Drill-through page — no-show rate, total revenue, total monthly encounters, full patient list with insurance types for any individual provider |
-
----
-
-## v2 Redesign — What Changed and Why
-
-**Consolidated from 5 pages to 3**
-The original dashboard had separate pages for Clinic Overview, Patient Analysis, Patient Risk & Utilization, Financial Trends, and Provider Detail. Financial Trends visuals were merged into Clinic Overview so all revenue and operational data lives in one executive view. Patient Analysis and Patient Risk & Utilization were merged into one Patient & Risk Analysis page so all patient-facing analysis is in one place. This mirrors how clinic leadership actually consumes data — they want one operational page and one patient page, not five separate tabs.
-
-**Professional branding applied**
-A custom Sunrise Behavioral Health logo was added to every page header. The navy (#0f3460) and cyan (#4CC9F0) color palette was applied consistently across all pages, replacing the default Power BI color scheme.
-
-**Conditional coloring on revenue chart**
-The Total Revenue by Year chart now uses conditional coloring — 2022 (peak year) is highlighted in red so the revenue decline story is immediately visible without reading the numbers.
-
-**No-show rate formatting fixed**
-The provider no-show rate bar chart was previously displaying values in K% format. This was corrected to display as proper percentages (28.72%, 4.46%, etc.).
-
+No-show rate formatting fixed The provider no-show rate bar chart was previously displaying values in K% format. This was corrected to display as proper percentages (28.72%, 4.46%, etc.).
 ---
 
 ## Page Screenshots
@@ -156,45 +146,37 @@ Revenue Per Encounter Target = 90
 
 ---
 
-## Key Findings
+Key Findings
 
-**1. Revenue peaked in 2022 and declined 26% in 2023**
-Clinic revenue fell from $80K in 2022 to $59K in 2023. The running total chart shows the decline accelerated in the second half of 2023 — the running total flattens sharply after June, confirming the back half of the year generated roughly half the monthly revenue of the front half.
+1. Revenue peaked in 2022 and declined 26% in 2023 Clinic revenue fell from $79,637 in 2022 to $58,818 in 2023. The running total chart shows the decline accelerated in the second half of 2023 — the running total flattens sharply after June, confirming the back half of the year generated roughly half the monthly revenue of the front half.
 
-**2. Private insurance revenue declined the most in absolute dollars**
-The stacked revenue chart shows Private insurance shrinking as a share of total revenue from 2022 to 2023. Since Private pays the most per encounter, losing Private patients has an outsized financial impact beyond what encounter volume alone would suggest.
+2. Private insurance revenue declined the most in absolute dollars The stacked revenue chart shows Private insurance shrinking as a share of total revenue from 2022 to 2023. Since Private pays the most per encounter, losing Private patients has an outsized financial impact beyond what encounter volume alone would suggest.
 
-**3. Michael Okafor represents the clinic's most significant operational risk**
-At 48.07% no-show rate — more than double the clinic average of 19.78% and nearly 11x David Schwartz's 4.46% — Okafor's performance warrants immediate intervention. Drill-through to his Provider Detail page reveals his patient panel skews heavily toward Medi-Cal, explaining both the low revenue per encounter and the high no-show rate.
+3. Michael Okafor represents the clinic's most significant operational risk At a 48.1% no-show rate in 2023 — more than double the 2023 clinic average of 21.7% and nearly 11x David Schwartz's 4.46% — Okafor's performance warrants immediate intervention. His 87 no-shows cost an estimated $8,010 in 2023. Drill-through to his Provider Detail page reveals his patient panel skews heavily toward Medi-Cal, explaining both the low revenue per encounter and the high no-show rate.
 
-**4. Insurance Denial is the second leading discharge reason**
-Of 43 discharged patients, 10 (23.3%) left due to insurance denial — not clinical completion. This is a preventable discharge type that represents both a clinical failure and a financial one.
+4. Insurance Denial is the second leading discharge reason Of 43 discharged patients, 10 (23.3%) left due to insurance denial — not clinical completion. This is a preventable discharge type: these patients needed care that their payer stopped covering. Denials were spread across all three payers (4 Private, 3 Medi-Cal, 3 Medicare), so this is a documentation and authorization process issue, not a single-payer issue.
 
-**5. 47.06% of high utilizers are Medi-Cal patients**
-The clinic's most resource-intensive patients are disproportionately its least financially sustainable. This structural imbalance between utilization and reimbursement is a long-term sustainability risk.
+Why there's no dollar figure here: in this dataset, denied patients had the same visit counts and length of stay as patients who completed treatment, so the synthetic data doesn't show a measurable revenue gap. Real-world denial cost modeling needs claims and authorization data — that's what Project 3 adds.
 
-**6. Hospital Discharge referrals have the lowest no-show rate (16.44%)**
-Patients referred from a hospital discharge are more engaged than any other referral channel. Provider Referrals have the highest no-show rate (28.32%).
+5. 47.06% of high utilizers are Medi-Cal patients The clinic's most resource-intensive patients are disproportionately its least financially sustainable. This structural imbalance between utilization and reimbursement is a long-term sustainability risk.
 
----
+Definition note: this dashboard uses a fixed operational threshold — more than 20 encounters — which flags 34 patients, 16 of them on Medi-Cal. Project 1 uses a statistical definition (more than 1.5 standard deviations above the mean), which flags 17 patients. The fixed threshold is easier for clinic staff to apply and track month to month; the statistical one isolates true outliers.
 
-## Recommendations
+6. Hospital Discharge referrals have the lowest no-show rate (16.44%) Patients referred from a hospital discharge are more engaged than any other referral channel. Provider Referrals have the highest no-show rate (28.32%). Rates cover 2021–2024.
 
-**1. Implement provider-specific no-show intervention for Michael Okafor**
-A 48% no-show rate is not sustainable. Recommended actions: appointment reminder protocols (SMS/call 24-48 hours before), review of scheduling practices, and care coordinator outreach for patients who miss two consecutive appointments. Target: reduce to below the 20% clinic benchmark within 6 months.
+Recommendations
 
-**2. Review medical necessity documentation practices for Medi-Cal and Medicare patients**
-10 insurance denial discharges represents a 23.3% preventable discharge rate. Standardizing clinical documentation templates aligned to payer-specific medical necessity criteria, combined with a systematic appeals process, could recover a meaningful portion of these patients.
+Ranked by estimated financial impact relative to effort. All estimates use 2023 data and assume each prevented no-show becomes an attended visit reimbursed at the relevant average rate.
 
-**3. Develop a referral source-differentiated intake protocol**
-Since Hospital Discharge patients show the lowest no-show rate (16.44%) and Provider Referral the highest (28.32%), intake coordinators should implement enhanced engagement protocols for Provider Referral patients specifically.
+1. Implement provider-specific no-show intervention for Michael Okafor A 48% no-show rate is not sustainable. Recommended actions: appointment reminder protocols (SMS/call 24-48 hours before), review of scheduling practices, and care coordinator outreach for patients who miss two consecutive appointments. Target: reduce to below the 20% clinic benchmark within 6 months. Estimated impact: ~$4,700/year recovered (51 fewer no-shows × $92.07) · Effort: Low
 
-**4. Address Private insurance patient attrition before 2024**
-The payer mix data shows Private insurance declining as a share of revenue from 2022 to 2023. Retaining or growing the Private insurance patient base has an outsized financial return since Private pays significantly more per encounter.
+2. Address Private insurance patient attrition The payer mix data shows Private insurance declining as a share of revenue from 2022 to 2023. Retaining or growing the Private insurance patient base has an outsized financial return since Private pays significantly more per encounter. Revenue at stake: $12,323 in Private revenue lost 2022→2023 · Effort: Medium
 
-**5. Implement care coordination for the 34 identified high utilizers**
-High utilizers (>20 encounters) account for a disproportionate share of clinical resources. Proactive care coordination can both improve clinical outcomes and reduce the cost-revenue imbalance identified in the analysis.
+3. Develop a referral source-differentiated intake protocol Since Hospital Discharge patients show the lowest no-show rate (16.44%) and Provider Referral the highest (28.32%), intake coordinators should implement enhanced engagement protocols for Provider Referral patients specifically. Estimated impact: ~$1,890/year recovered (bringing 2023 Provider Referral no-shows down to the 16.44% rate) · Effort: Low
 
+4. Standardize medical necessity documentation and appeals across all payers 10 insurance denial discharges represents a 23.3% preventable discharge rate, spread across Private, Medi-Cal, and Medicare. Standardizing clinical documentation templates aligned to payer-specific medical necessity criteria, combined with a systematic appeals process, could keep a meaningful portion of these patients in care. Impact: 10 patients' continued care · Effort: Medium
+
+5. Implement care coordination for the 34 identified high utilizers High utilizers (>20 encounters) account for a disproportionate share of clinical resources. Proactive care coordination can both improve clinical outcomes and reduce the cost-revenue imbalance identified in the analysis. Effort: High
 ---
 
 ## File Availability and Publishing Constraints
@@ -208,10 +190,15 @@ This project is shared in two formats:
 
 ---
 
-## HIPAA Note
+HIPAA Note
 
 This project uses entirely synthetic data generated to mirror realistic behavioral health EMR structures. No real patient data was used. In a production environment, all patient PII would be replaced with de-identified patient IDs per HIPAA Safe Harbor guidelines prior to any analytical query or visualization.
 
+The dataset is a scaled-down sample (150 patients, 10 providers, 2021–2024). Rates, ratios, and per-encounter figures reflect realistic clinic dynamics; absolute revenue totals are smaller than a real 10-provider clinic would produce.
+
+How AI Was Used
+
+Claude (Anthropic) was used as a tutor and pair throughout this project: generating the synthetic dataset, explaining DAX patterns before I wrote them, debugging model and drill-through issues, and helping structure this documentation. The business questions, the clinical interpretation of the findings, the dashboard design choices, and the recommendations draw on my own behavioral health experience. Where AI-suggested approaches didn't fit — for example, calculating patient retention in DAX — I moved the logic to the SQL layer, where cohort calculations belong.
 ---
 
 ## Project Connections
