@@ -256,7 +256,10 @@ Claude (Anthropic) was used as a tutor and pair throughout this project: generat
 
 ## About
 
-Built by Jakob Bridgman — behavioral health worker with over 3 years of direct clinical experience transitioning into healthcare data analytics and data engineering. This project reflects both technical Power BI and DAX proficiency and domain-level understanding of behavioral health operations, payer dynamics, and clinical outcome metrics.
+Built by **Jakob Bridgman** — Microsoft Certified: Power BI Data Analyst Associate (PL-300), with 3+ years of direct clinical experience in behavioral health, transitioning into healthcare data analytics and data engineering.
 
-*Targeting Healthcare Data Analyst, Clinical Data Analyst, and Epic Clarity Analyst roles. Open to connecting on LinkedIn
-https://www.linkedin.com/in/jakob-bridgman-514615397/
+I work inside behavioral health treatment every day. I've watched patients lose care to insurance denials and clinics lose revenue to problems nobody was tracking. This project combines Power BI and DAX skills with a firsthand understanding of behavioral health operations, payer dynamics, and clinical outcomes.
+
+*Targeting Healthcare Data Analyst, Clinical Data Analyst, BI Analyst, and junior Analytics Engineering roles.*
+
+**LinkedIn:** https://www.linkedin.com/in/jakob-bridgman-514615397/
