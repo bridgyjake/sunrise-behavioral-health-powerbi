@@ -176,7 +176,7 @@ Clinic revenue fell from $79,637 in 2022 to $58,818 in 2023. The running total c
 The stacked revenue chart shows Private insurance shrinking as a share of total revenue from 2022 to 2023. Since Private pays the most per encounter, losing Private patients has an outsized financial impact beyond what encounter volume alone would suggest.
 
 **3. Michael Okafor represents the clinic's most significant operational risk**
-At a 48.1% no-show rate in 2023 — more than double the 2023 clinic average of 21.7% and nearly 11x David Schwartz's 4.46% — Okafor's performance warrants immediate intervention. His 87 no-shows cost an estimated $8,010 in 2023. Drill-through to his Provider Detail page reveals his patient panel skews heavily toward Medi-Cal, explaining both the low revenue per encounter and the high no-show rate.
+At a 48.1% no-show rate in 2023 — more than double the 2023 clinic average of 21.7% and nearly 11x David Schwartz's 4.46% — Okafor's performance warrants immediate intervention. His 87 no-shows cost an estimated $8,010 in 2023. Payer mix doesn't explain it: his panel is 45% Medi-Cal, about the same as David Schwartz's (46%), and his no-show rate is above 40% with every payer. His Substance Use caseload is the next factor to test.
 
 **4. Insurance Denial is the second leading discharge reason**
 Of 43 discharged patients, 10 (23.3%) left due to insurance denial — not clinical completion. This is a preventable discharge type: these patients needed care that their payer stopped covering. Denials were spread across all three payers (4 Private, 3 Medi-Cal, 3 Medicare), so this is a documentation and authorization process issue, not a single-payer issue.
